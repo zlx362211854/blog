@@ -1,11 +1,14 @@
-# AMD,CMD,CommonJs,ESModule等规范简介
+---
+title: AMD,CMD,CommonJs,ESModule等规范简介
+date: 2022-03-04 14:54:17
+tags:
+---
 
+# AMD,CMD,CommonJs,ESModule等规范简介
 
 ## 1. AMD
 
 AMD 是 RequireJS 在推广过程中对模块定义的规范化产出,它是一个概念，RequireJS是对这个概念的实现
-
-
 
 ```javascript
 define(['package/a.js'], function(a) {
@@ -20,7 +23,6 @@ define(['package/a.js'], function(a) {
 
 关键词：**依赖前置**，所需依赖在最开头定义好
 
-
 ## 2. CMD
 
 **CMD** 是**SeaJS**在推广过程中对模块定义的规范化产出，是一个同步模块定义，是SeaJS的一个标准
@@ -34,11 +36,9 @@ define(function(require, exports, module) {
 
 关键词：依赖就近引入，在哪里用就在哪里引
 
-
 ## 3. CommonJs
 
 **CommonJS规范--** -是通过**module.exports定**义的，在前端浏览器里面并不支持[module](https://so.csdn.net/so/search?q=module&spm=1001.2101.3001.7020).exports,通过node.js后端使用的
-
 
 ## 4. ES6 Module
 
